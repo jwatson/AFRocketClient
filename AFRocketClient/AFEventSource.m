@@ -106,7 +106,7 @@ static NSDictionary * AFServerSentEventFieldsFromData(NSData *data, NSError * __
     [aCoder encodeObject:self.event forKey:@"event"];
     [aCoder encodeObject:self.identifier forKey:@"identifier"];
     [aCoder encodeObject:self.data forKey:@"data"];
-    [aCoder encodeInteger:self.retry forKey:@"retry"];
+    [aCoder encodeDouble:self.retry forKey:@"retry"];
 }
 
 #pragma mark - NSCopying
